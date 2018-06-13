@@ -12,14 +12,14 @@ public class Inmueble {
     private String propietario;
     private Double valor;
     private Double porcentajePerdida;
-    private Double pujaMin;
-    private Double pujaMax;
+    private int pujaMin;
+    private int pujaMax;
     private Boolean estado;
 
     public Inmueble() {
     }
 
-    public Inmueble(String idInmueble, String propietario, Double valor, Double porcentajePerdida, Double pujaMin, Double pujaMax, Boolean estado) {
+    public Inmueble(String idInmueble, String propietario, Double valor, Double porcentajePerdida, int pujaMin, int pujaMax, Boolean estado) {
         this.idInmueble = idInmueble;
         this.propietario = propietario;
         this.valor = valor;
@@ -69,19 +69,19 @@ public class Inmueble {
         this.porcentajePerdida = porcentajePerdida;
     }
 
-    public Double getPujaMin() {
+    public int getPujaMin() {
         return pujaMin;
     }
 
-    public void setPujaMin(Double pujaMin) {
+    public void setPujaMin(int pujaMin) {
         this.pujaMin = pujaMin;
     }
 
-    public Double getPujaMax() {
+    public int getPujaMax() {
         return pujaMax;
     }
 
-    public void setPujaMax(Double pujaMax) {
+    public void setPujaMax(int pujaMax) {
         this.pujaMax = pujaMax;
     }
 
